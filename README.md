@@ -18,6 +18,10 @@
 - feed page
 - create feed slice
 - Edit profile page
+- show the connections
+- show requests
+- accept and reject the request
+- Ingore and interested in users
 
 
 ## Routes
