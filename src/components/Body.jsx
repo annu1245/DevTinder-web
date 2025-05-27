@@ -17,8 +17,8 @@ const Body = () => {
     }, []);
 
     const getUser = async () => {
+        if (user) return;
         try {
-            if (user) return;
             const res = await axios.get(BASE_URL + "profile", { withCredentials: true });
             dispatch(addUser(res.data));
         } catch (error) {
