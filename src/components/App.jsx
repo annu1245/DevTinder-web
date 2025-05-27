@@ -9,6 +9,8 @@ import Feed from "./Feed";
 import axios from "axios";
 import { BASE_URL } from "../utils/constants";
 import { useEffect } from "react";
+import Connections from "./Connections";
+import Requests from "./Requests";
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <Route path="/" element={<Feed/>}/>
           <Route path="login" element={<Login/>} />
           <Route path="profile" element={<Profile/>} />
+          <Route path="connections" element={<Connections/>} />
+          <Route path="requests" element={<Requests/>} />
           <Route path="*" element={<h1>Page not Found</h1>} />
         </Route>
       </Routes>
