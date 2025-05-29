@@ -7,12 +7,12 @@ import { addUser } from "../utils/userSlice";
 import { GENDER } from "../utils/constants";
 
 const EditProfile = ({ user }) => {
-    const [firstName, setFirstName] = useState(user.firstName);
-    const [lastName, setLastName] = useState(user.lastName);
-    const [age, setAge] = useState(user.age);
-    const [selectedGender, setSelectedGender] = useState(user.gender);
-    const [about, setAbout] = useState(user.about);
-    const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
+    const [firstName, setFirstName] = useState(user.firstName || "");
+    const [lastName, setLastName] = useState(user.lastName || "");
+    const [age, setAge] = useState(user.age || "");
+    const [selectedGender, setSelectedGender] = useState(user.gender || "");
+    const [about, setAbout] = useState(user.about || "");
+    const [photoUrl, setPhotoUrl] = useState(user.photoUrl|| "");
     const [error, setError] = useState("");
     const [showToaster, setShowToaster] = useState(false);
 
